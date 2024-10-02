@@ -1,1 +1,1 @@
-from SPlogger import SPLogger, SPinfo
+from SPlogger import SPinfo
