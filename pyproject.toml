@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "MySPlogger"
+name = "SPlogger"
 version = "0.1.0"
 description = ""
 authors = ["Foxx <andrejpolisuk7502@gmail.com>"]
