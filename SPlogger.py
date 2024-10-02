@@ -6,15 +6,12 @@ class SPLogger(logging.Logger):
         super(SPLogger, self).__init__(name, level)
         coloredlogs.install(
             logger=self,
-            level=level,
+            level=self.level,
             fmt=fmt,
             datefmt=datefmt
         )
 
-    def log(self, level, msg, *args, **kwargs):
-        super(SPLogger, self).log(level, msg, *args, **kwargs)
-
 logger_instance = SPLogger()
 
-def SPinfo(message, level='INFO'):
-    logger_instance.log(getattr(logging, level.upper()), message)
+def SPinfo(message):
+    logger_instance.info(message)
